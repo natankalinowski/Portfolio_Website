@@ -1,0 +1,17 @@
+body{
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    // font-size: $default-font-size;
+    line-height: 1.7;
+    // color: $color-gray-dark;
+}
+.header{
+    font-size: $main-font-size;
+    padding: 10rem 0rem;
+}
+.about-me{
+    width: 100%;
+    height: 20vh;
+    background-color: $main-dark;
+}
