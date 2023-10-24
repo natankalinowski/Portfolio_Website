@@ -1,12 +1,11 @@
 .header{
 
     height: 95vh;
-   
     background-color: $main-dark;
     position: relative;
     &__background{
      background-image:
-         url('../img/kur3.jpg');
+         url('../img/header_back.jpg');
        background-size: cover;
        background-position: center;
         position: absolute;

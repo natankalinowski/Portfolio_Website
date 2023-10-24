@@ -11,21 +11,6 @@
   100% {
     transform: rotate(0deg), scale(1); } }
 
-.page_text--h2 {
-  color: #F5F7F8;
-  font-size: 1.2rem;
-  text-transform: uppercase; }
-
-.page_text--huge {
-  color: #151617;
-  text-transform: uppercase;
-  font-size: 8rem; }
-
-.page_text--big {
-  color: #151617;
-  text-transform: uppercase;
-  font-size: 2rem; }
-
 .heading__h2 {
   font-size: 6rem;
   color: #F5F7F8; }
@@ -70,7 +55,7 @@ body {
   background-color: #151617;
   position: relative; }
   .header__background {
-    background-image: url("../img/kur3.jpg");
+    background-image: url("../img/header_back.jpg");
     background-size: cover;
     background-position: center;
     position: absolute;
