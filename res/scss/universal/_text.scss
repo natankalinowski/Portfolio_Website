@@ -6,9 +6,33 @@
 
     }
     &__h3{
-        font-size: 3rem;
+        text-align: center;
+        font-size: 2.5rem;
         color: $main-white;
         animation: exitAnim .8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+
+
+        &--role-span{
+            color: #baf6fd;
+            position: relative;
+            overflow: hidden;
+            
+            &::before{
+                content: '';
+                animation: roleAnim 10s linear infinite forwards;
+            }
+        }
+        &--end-span{
+            color: $main-white;
+            position: relative;
+            overflow: hidden;
+            
+            &::before{
+                content: '';
+                animation: refillAnim 10s linear infinite forwards;
+                opacity: 0;
+            }
+        }
 
     }
 }

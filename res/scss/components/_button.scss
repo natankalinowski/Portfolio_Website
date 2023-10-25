@@ -6,6 +6,10 @@
         text-decoration: none;
     }
 
+    &--anim{
+        animation: entryfromBotAnim 1s cubic-bezier(0.65, 0, 0.35, 1)forwards;
+    }
+
 }
 .btn-header{
     font-weight: 500;
