@@ -2,10 +2,13 @@
     &__h2{
         font-size: 6rem;
         color: $main-white;
+        animation: entryAnim .8s cubic-bezier(0.65, 0, 0.35, 1)forwards;
 
     }
     &__h3{
         font-size: 3rem;
         color: $main-white;
+        animation: exitAnim .8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+
     }
 }
