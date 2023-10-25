@@ -3,7 +3,6 @@
 .btn{
     &:link,
     &:visited{
-        color: $main-white;
         text-decoration: none;
     }
 
@@ -12,15 +11,29 @@
     font-weight: 500;
     display: inline-block;
     text-align: center;
-    color: $main-white;
     border-radius: 3px;
-    border: 2px solid $main-white;
+    background-color: $main-white;
+    color: $main-gray;
     padding: 0.5rem 2rem;
     transition: background-color ease-in-out .3s, color ease-in-out .3s ;
+    box-shadow: 0rem 0rem 2rem rgba($main-gray,0.5);    
+    border: 2px solid $main-white;
+    position: relative;
+
+    &::after{
+        position: absolute;
+        content: '';
+        top: -1rem;
+        right: -1rem;
+        width: 3rem;
+        height: 10px;
+    }
 
     &:hover,
     &:active{
-        background-color: $main-white;
-        color: $main-gray;
+        background-color: transparent;
+        border: 2px solid $main-white;
+        color: $main-white;
+
     }
 }

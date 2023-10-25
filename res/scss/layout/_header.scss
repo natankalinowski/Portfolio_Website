@@ -4,17 +4,23 @@
     background-color: $main-dark;
     position: relative;
     &__background{
-     background-image:
-         url('../img/header_back.jpg');
-       background-size: cover;
-       background-position: center;
-        position: absolute;
-        width: 100%;
+    //  background-image:
+    //      url('../img/header_back.webp');
+    position: absolute;
+    width: 100%;
         height: 100%;
         clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
         top: 0;
         left: 0;
         filter: blur(3px);
+
+        &--img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            
+        }
     }
     &__content{
         position: absolute;
