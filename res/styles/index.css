@@ -1,4 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.uni-marg-bot-huge {
+  margin-bottom: 8rem; }
+
+.uni-marg-bot-big {
+  margin-bottom: 6rem; }
+
+.uni-marg-bot-mid {
+  margin-bottom: 4rem; }
+
+.uni-marg-bot-small {
+  margin-bottom: 2rem; }
+
+.uni-marg-bot-ultra-small {
+  margin-bottom: 1rem; }
+
+.uni-marg-top-huge {
+  margin-top: 8rem; }
+
+.uni-marg-top-big {
+  margin-top: 6rem; }
+
+.uni-marg-top-mid {
+  margin-top: 4rem; }
+
+.uni-marg-top-small {
+  margin-top: 2rem; }
+
+.uni-marg-top-ultra-small {
+  margin-top: 1rem; }
+
 @keyframes shake {
   0% {
     transform: rotate(0deg); }
@@ -96,13 +126,15 @@
 .heading__h2 {
   font-size: 6rem;
   color: #F5F7F8;
-  animation: entryAnim 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards; }
+  animation: entryAnim 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  padding: 0; }
 
 .heading__h3 {
   text-align: center;
   font-size: 2.5rem;
   color: #F5F7F8;
-  animation: exitAnim 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards; }
+  animation: exitAnim 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  line-height: 2rem; }
   .heading__h3--role-span {
     color: #baf6fd;
     position: relative;
@@ -118,6 +150,36 @@
       content: '';
       animation: refillAnim 10s linear infinite forwards;
       opacity: 0; }
+
+.uni-marg-bot-huge {
+  margin-bottom: 8rem; }
+
+.uni-marg-bot-big {
+  margin-bottom: 6rem; }
+
+.uni-marg-bot-mid {
+  margin-bottom: 4rem; }
+
+.uni-marg-bot-small {
+  margin-bottom: 2rem; }
+
+.uni-marg-bot-ultra-small {
+  margin-bottom: 1rem; }
+
+.uni-marg-top-huge {
+  margin-top: 8rem; }
+
+.uni-marg-top-big {
+  margin-top: 6rem; }
+
+.uni-marg-top-mid {
+  margin-top: 4rem; }
+
+.uni-marg-top-small {
+  margin-top: 2rem; }
+
+.uni-marg-top-ultra-small {
+  margin-top: 1rem; }
 
 body {
   font-family: "Lato",sans-serif;
