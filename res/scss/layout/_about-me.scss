@@ -1,0 +1,16 @@
+.about-me{
+    box-sizing: content-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    &__heading{
+        text-align: center;
+        padding: 1rem;
+    }
+    &__content-box{
+        min-width: 50%;
+        width: 50rem;
+        
+    }
+}

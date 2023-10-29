@@ -1,8 +1,13 @@
-.heading{
-    &__h2{
+.text-box{
+    &__h1{
         font-size: 6rem;
         color: $main-white;
-        animation: entryLeftAnim .8s cubic-bezier(0.65, 0, 0.35, 1)forwards;
+        padding: 0;
+
+    }
+    &__h2{
+        font-size: 4rem;
+        color: $main-white;
         padding: 0;
 
     }
@@ -10,12 +15,34 @@
         text-align: center;
         font-size: 2.5rem;
         color: $main-white;
-        animation: entryRightAnim .8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
         line-height: 2rem;
 
         &--dev{
             color: $main-red;
         }
+        &--light{
+            color: $main-white;
+            font-weight: 500;
+            font-size: 2rem;
+        }
 
+    }
+    &__span{
+        &--red{
+            color: $main-red;
+        }
+        &--blue{
+            color: $main-blue;
+        }
+        &--yellow{
+            color: $main-yellow;
+        }
+    }
+    &--anim-fr-left{
+        animation: entryLeftAnim .8s cubic-bezier(0.65, 0, 0.35, 1)forwards;
+
+    }
+    &--anim-fr-right{
+        animation: entryRightAnim .8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
     }
 }

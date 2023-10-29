@@ -11,7 +11,8 @@ body{
     padding: 10rem 0rem;
 }
 .about-me{
-    width: 100%;
-    height: 20vh;
+    box-sizing: content-box;
+    padding: 10rem 10rem;
     background-color: $main-dark;
+
 }
