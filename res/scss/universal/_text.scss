@@ -24,6 +24,7 @@
             color: $main-white;
             font-weight: 500;
             font-size: 2rem;
+            max-width: 80%;
         }
 
     }
@@ -44,5 +45,27 @@
     }
     &--anim-fr-right{
         animation: entryRightAnim .8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+}
+.special{
+    &--html{
+        color: $main-green;
+        background: $color-gray-1;
+        padding: 0.5rem 1rem;
+    }
+    &--css{
+        color: $main-red;
+        background: $color-gray-1;
+        padding: 0.5rem 1rem;
+    }
+    &--js{
+        color: $main-yellow;
+        background: $color-gray-1;
+        padding: 0.5rem1rem;
+    }
+    &--react{
+        color: $main-blue;
+        background: $color-gray-1;
+        padding: 0.5rem 1rem;
     }
 }

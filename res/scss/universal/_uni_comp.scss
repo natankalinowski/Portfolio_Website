@@ -17,3 +17,9 @@
     width: 100%;
     text-align: center;
 }
+.uni-bot-gap-sm{
+
+    &:not(:last-child){
+        margin-bottom: 2rem;
+    }
+}

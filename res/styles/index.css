@@ -35,6 +35,9 @@
   width: 100%;
   text-align: center; }
 
+.uni-bot-gap-sm:not(:last-child) {
+  margin-bottom: 2rem; }
+
 @keyframes shake {
   0% {
     transform: rotate(0deg); }
@@ -97,7 +100,8 @@
   .text-box__h3--light {
     color: #F5F7F8;
     font-weight: 500;
-    font-size: 2rem; }
+    font-size: 2rem;
+    max-width: 80%; }
 
 .text-box__span--red {
   color: #fc8181; }
@@ -113,6 +117,26 @@
 
 .text-box--anim-fr-right {
   animation: entryRightAnim 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards; }
+
+.special--html {
+  color: #bdfdba;
+  background: #1f1f1f;
+  padding: 0.5rem 1rem; }
+
+.special--css {
+  color: #fc8181;
+  background: #1f1f1f;
+  padding: 0.5rem 1rem; }
+
+.special--js {
+  color: #ffd753;
+  background: #1f1f1f;
+  padding: 0.5rem1rem; }
+
+.special--react {
+  color: #baf6fd;
+  background: #1f1f1f;
+  padding: 0.5rem 1rem; }
 
 .uni-marg-bot-huge {
   margin-bottom: 8rem; }
@@ -149,6 +173,9 @@
   display: inline-block;
   width: 100%;
   text-align: center; }
+
+.uni-bot-gap-sm:not(:last-child) {
+  margin-bottom: 2rem; }
 
 .shape__arr {
   background-color: #1f1f1f;
@@ -332,8 +359,43 @@ body {
     text-align: center;
     padding: 1rem; }
   .about-me__content-box {
-    min-width: 50%;
-    width: 50rem; }
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+  .about-me__text-box {
+    max-width: 60%; }
+  .about-me__pfp {
+    width: 20rem;
+    height: 20rem;
+    padding: 0;
+    border-radius: 50%;
+    border: 0.5rem solid rgba(245, 247, 248, 0.8); }
+    .about-me__pfp--img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; }
+    .about-me__pfp::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 20%;
+      width: 5rem;
+      height: 5rem;
+      border: 2rem solid #fc8181;
+      border-radius: 50%;
+      opacity: 30%; }
+    .about-me__pfp::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      right: 20%;
+      width: 5rem;
+      height: 5rem;
+      border: 2rem solid #ffd753;
+      border-radius: 50%;
+      opacity: 30%; }
 
 .btn:link, .btn:visited {
   text-decoration: none; }

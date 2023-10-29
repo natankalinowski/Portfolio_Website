@@ -9,8 +9,52 @@
         padding: 1rem;
     }
     &__content-box{
-        min-width: 50%;
-        width: 50rem;
-        
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    }
+    &__text-box{
+        max-width: 60%;
+    }
+    &__pfp{
+        width: 20rem;
+        height: 20rem;
+        padding: 0;
+        border-radius: 50%;
+        border: 0.5rem solid rgba($main-white,0.8);
+        &--img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+
+        }
+
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 20%;
+            width: 5rem;
+            height: 5rem;
+            border: 2rem solid $main-red;
+            border-radius: 50%;
+            opacity: 30%;
+           
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            bottom: 0;
+            right: 20%;
+            width: 5rem;
+            height: 5rem;
+            border: 2rem solid $main-yellow;
+            border-radius: 50%;
+            opacity: 30%;
+           
+        }
     }
 }
