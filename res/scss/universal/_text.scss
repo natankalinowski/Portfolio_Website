@@ -2,7 +2,7 @@
     &__h2{
         font-size: 6rem;
         color: $main-white;
-        animation: entryAnim .8s cubic-bezier(0.65, 0, 0.35, 1)forwards;
+        animation: entryLeftAnim .8s cubic-bezier(0.65, 0, 0.35, 1)forwards;
         padding: 0;
 
     }
@@ -10,30 +10,11 @@
         text-align: center;
         font-size: 2.5rem;
         color: $main-white;
-        animation: exitAnim .8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        animation: entryRightAnim .8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
         line-height: 2rem;
 
-
-        &--role-span{
-            color: #baf6fd;
-            position: relative;
-            overflow: hidden;
-            
-            &::before{
-                content: '';
-                animation: roleAnim 10s linear infinite forwards;
-            }
-        }
-        &--end-span{
-            color: $main-white;
-            position: relative;
-            overflow: hidden;
-            
-            &::before{
-                content: '';
-                animation: refillAnim 10s linear infinite forwards;
-                opacity: 0;
-            }
+        &--dev{
+            color: $main-yellow;
         }
 
     }

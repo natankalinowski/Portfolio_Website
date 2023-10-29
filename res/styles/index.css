@@ -41,9 +41,19 @@
   100% {
     transform: rotate(0deg), scale(1); } }
 
-@keyframes entryAnim {
+@keyframes entryLeftAnim {
   0% {
     transform: translate(-10rem);
+    opacity: 0; }
+  80% {
+    opacity: 0.7; }
+  100% {
+    transform: translate(0);
+    opacity: 1; } }
+
+@keyframes entryRightAnim {
+  0% {
+    transform: translate(10rem);
     opacity: 0; }
   80% {
     opacity: 0.7; }
@@ -61,95 +71,20 @@
     transform: translateY(0);
     opacity: 1; } }
 
-@keyframes exitAnim {
-  0% {
-    transform: translate(10rem);
-    opacity: 0; }
-  80% {
-    opacity: 0.7; }
-  100% {
-    transform: translate(0);
-    opacity: 1; } }
-
-@keyframes roleAnim {
-  0% {
-    opacity: 0; }
-  12.5% {
-    content: 'Front-End';
-    color: #baf6fd;
-    opacity: 1; }
-  25% {
-    opacity: 0; }
-  37.5% {
-    content: 'JavaScript';
-    color: #ffd753;
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  62.5% {
-    content: 'Self Motivated';
-    color: #F5F7F8;
-    opacity: 1; }
-  75% {
-    opacity: 0; }
-  87.5% {
-    content: 'Casual';
-    opacity: 1;
-    color: #a353ff; }
-  100% {
-    opacity: 0; } }
-
-@keyframes refillAnim {
-  0% {
-    opacity: 0; }
-  12.5% {
-    content: 'Developer';
-    opacity: 1; }
-  25% {
-    opacity: 0; }
-  37.5% {
-    content: 'enjoyer';
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  62.5% {
-    content: 'Dev';
-    opacity: 1; }
-  75% {
-    opacity: 0; }
-  87.5% {
-    content: 'Gamer';
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
 .heading__h2 {
   font-size: 6rem;
   color: #F5F7F8;
-  animation: entryAnim 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  animation: entryLeftAnim 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
   padding: 0; }
 
 .heading__h3 {
   text-align: center;
   font-size: 2.5rem;
   color: #F5F7F8;
-  animation: exitAnim 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  animation: entryRightAnim 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
   line-height: 2rem; }
-  .heading__h3--role-span {
-    color: #baf6fd;
-    position: relative;
-    overflow: hidden; }
-    .heading__h3--role-span::before {
-      content: '';
-      animation: roleAnim 10s linear infinite forwards; }
-  .heading__h3--end-span {
-    color: #F5F7F8;
-    position: relative;
-    overflow: hidden; }
-    .heading__h3--end-span::before {
-      content: '';
-      animation: refillAnim 10s linear infinite forwards;
-      opacity: 0; }
+  .heading__h3--dev {
+    color: #ffd753; }
 
 .uni-marg-bot-huge {
   margin-bottom: 8rem; }
@@ -217,6 +152,7 @@ body {
   background-color: #151617;
   position: relative; }
   .header__background {
+    background-image: linear-gradient(to top, #1e1f21, #151617);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -224,26 +160,6 @@ body {
     top: 0;
     left: 0;
     filter: blur(3px); }
-    .header__background::before {
-      position: absolute;
-      z-index: 10;
-      content: '';
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(to right bottom, #161616, transparent); }
-    .header__background--img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      position: relative; }
-      .header__background--img::after {
-        position: absolute;
-        content: '';
-        width: 10rem;
-        height: 10rem;
-        background-color: red;
-        z-index: 10; }
   .header__content {
     position: absolute;
     top: 50%;
