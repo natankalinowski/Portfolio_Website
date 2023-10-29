@@ -84,7 +84,7 @@
   animation: entryRightAnim 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
   line-height: 2rem; }
   .heading__h3--dev {
-    color: #ffd753; }
+    color: #ff5353; }
 
 .uni-marg-bot-huge {
   margin-bottom: 8rem; }
@@ -115,6 +115,31 @@
 
 .uni-marg-top-ultra-small {
   margin-top: 1rem; }
+
+.shape__arr {
+  background-color: #1f1f1f;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); }
+
+.shape__circle {
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  opacity: 30%;
+  background-color: transparent; }
+  .shape__circle--yellow {
+    width: 8rem;
+    height: 8rem;
+    border: 2rem solid #ffd753; }
+  .shape__circle--blue {
+    width: 8rem;
+    height: 8rem;
+    border: 2rem solid #b8f3fa; }
+  .shape__circle--bot-r {
+    right: 5rem;
+    bottom: 2rem; }
+  .shape__circle--top-l {
+    top: 0;
+    left: 0; }
 
 body {
   font-family: "Lato",sans-serif;
@@ -152,19 +177,45 @@ body {
   background-color: #151617;
   position: relative; }
   .header__background {
-    background-image: linear-gradient(to top, #1e1f21, #151617);
+    background-color: #1a1a1a;
     position: absolute;
     width: 100%;
     height: 100%;
     clip-path: polygon(0 0, 100% 0%, 100% 87%, 0 100%);
     top: 0;
     left: 0;
-    filter: blur(3px); }
+    z-index: 5;
+    overflow: hidden; }
+    .header__background .shape__arr {
+      width: calc(30vw + 5rem);
+      height: calc(30vw + 5rem);
+      position: absolute; }
+      .header__background .shape__arr--top-r {
+        top: 0;
+        right: 0;
+        transform: rotate(135deg);
+        top: -12vw;
+        right: -12vw;
+        z-index: 6; }
+      .header__background .shape__arr--bot-l {
+        bottom: -12vw;
+        left: -12vw;
+        transform: rotate(-45deg);
+        z-index: 6; }
+  .header__shape {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; }
   .header__content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    z-index: 10; }
   .header__btn-box {
     text-align: center;
     padding: 2rem 0; }

@@ -1,0 +1,36 @@
+.shape{
+    &__arr{
+     
+        background-color: $color-gray-1;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+}
+
+.shape__circle{
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    opacity: 30%;
+    background-color: transparent;
+
+
+    &--yellow{
+        width: 8rem;
+        height: 8rem;
+        border: 2rem solid $main-yellow;
+    }
+    &--blue{
+        width: 8rem;
+        height: 8rem;
+        border: 2rem solid #b8f3fa;
+    }
+    &--bot-r{
+        right: 5rem;
+        bottom: 2rem;
+    }
+    &--top-l{
+        top: 0;
+        left: 0;
+    }
+
+}

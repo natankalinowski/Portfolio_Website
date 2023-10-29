@@ -3,21 +3,54 @@
     height: 95vh;
     background-color: $main-dark;
     position: relative;
+
     &__background{
-    background-image: linear-gradient(to top, $color-dark-1,$main-dark);
-     position: absolute;
-    width: 100%;
+        background-color: $color-dark-1;
+         position: absolute;
+        width: 100%;
         height: 100%;
         clip-path: polygon(0 0, 100% 0%, 100% 87%, 0 100%);
         top: 0;
         left: 0;
-        filter: blur(3px);
+        z-index: 5;
+        overflow: hidden;
         
+
+        .shape__arr{
+            width: calc(30vw + 5rem);
+            height: calc(30vw + 5rem);
+            position: absolute;
+
+            &--top-r{
+                top: 0;
+                right: 0;
+                transform: rotate(135deg);
+                top: -12vw;
+                right: -12vw;
+                z-index: 6;
+            }
+            &--bot-l{
+                bottom: -12vw;
+                left: -12vw;
+                transform: rotate(-45deg);
+                z-index: 6;
+            }
+        }
        
+    }
+    &__shape{
+       
+        width: 60%;
+        height: 60%;
+        position: absolute;
+        @include absoluteCtr;
+        z-index: 3;
+
     }
     &__content{
         position: absolute;
         @include absoluteCtr;
+        z-index: 10;
     }
     &__btn-box{
         text-align: center;
