@@ -1,69 +1,80 @@
-.text-box{
-    &__h1{
+.text-box {
+    &__h1 {
         font-size: 6rem;
         color: $main-white;
         padding: 0;
 
     }
-    &__h2{
+
+    &__h2 {
         font-size: 4rem;
         color: $main-white;
         padding: 0;
 
     }
-    &__h3{
+
+    &__h3 {
         text-align: center;
         font-size: 2.5rem;
         color: $main-white;
         line-height: 2rem;
 
-        &--dev{
+        &--dev {
             color: $main-red;
         }
-        &--light{
+
+        &--light {
             color: $main-white;
             font-weight: 500;
             font-size: 2rem;
-            max-width: 80%;
         }
 
     }
-    &__span{
-        &--red{
+
+    &__span {
+        &--red {
             color: $main-red;
         }
-        &--blue{
+
+        &--blue {
             color: $main-blue;
         }
-        &--yellow{
+
+        &--yellow {
             color: $main-yellow;
         }
     }
-    &--anim-fr-left{
+
+    &--anim-fr-left {
         animation: entryLeftAnim .8s cubic-bezier(0.65, 0, 0.35, 1)forwards;
 
     }
-    &--anim-fr-right{
+
+    &--anim-fr-right {
         animation: entryRightAnim .8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
     }
 }
-.special{
-    &--html{
+
+.special {
+    &--html {
         color: $main-green;
         background: $color-gray-1;
         padding: 0.5rem 1rem;
     }
-    &--css{
+
+    &--css {
         color: $main-red;
         background: $color-gray-1;
         padding: 0.5rem 1rem;
     }
-    &--js{
+
+    &--js {
         color: $main-yellow;
         background: $color-gray-1;
         padding: 0.5rem1rem;
     }
-    &--react{
+
+    &--react {
         color: $main-blue;
         background: $color-gray-1;
         padding: 0.5rem 1rem;

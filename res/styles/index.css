@@ -100,8 +100,7 @@
   .text-box__h3--light {
     color: #F5F7F8;
     font-weight: 500;
-    font-size: 2rem;
-    max-width: 80%; }
+    font-size: 2rem; }
 
 .text-box__span--red {
   color: #fc8181; }
@@ -354,48 +353,43 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
+  .about-me__back {
+    background-color: #151617;
+    clip-path: polygon(0 0, 100% 0%, 100% 87%, 0 100%);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
   .about-me__heading {
     text-align: center;
-    padding: 1rem; }
+    padding: 1rem;
+    z-index: 2; }
   .about-me__content-box {
-    max-width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; }
-  .about-me__text-box {
-    max-width: 60%; }
+    z-index: 2;
+    position: relative;
+    max-width: max-content;
+    text-align: left;
+    max-width: 50%;
+    display: inline-block;
+    text-align: left; }
   .about-me__pfp {
     width: 20rem;
     height: 20rem;
     padding: 0;
     border-radius: 50%;
-    border: 0.5rem solid rgba(245, 247, 248, 0.8); }
+    border: 0.5rem solid rgba(245, 247, 248, 0.8);
+    outline-offset: 20rem;
+    float: left;
+    shape-outside: circle();
+    margin: 0 2rem 2rem 0; }
     .about-me__pfp--img {
       width: 100%;
       height: 100%;
       border-radius: 50%; }
-    .about-me__pfp::before {
-      position: absolute;
-      content: '';
-      top: 0;
-      right: 20%;
-      width: 5rem;
-      height: 5rem;
-      border: 2rem solid #fc8181;
-      border-radius: 50%;
-      opacity: 30%; }
-    .about-me__pfp::after {
-      position: absolute;
-      content: '';
-      bottom: 0;
-      right: 20%;
-      width: 5rem;
-      height: 5rem;
-      border: 2rem solid #ffd753;
-      border-radius: 50%;
-      opacity: 30%; }
 
 .btn:link, .btn:visited {
   text-decoration: none; }
