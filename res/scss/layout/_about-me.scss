@@ -12,15 +12,45 @@
         z-index: 2;
 
     }
-    &__content-box{
-        z-index: 2;
+    &__content-grid{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+        padding: 5rem 0rem;
         position: relative;
-        max-width: max-content;
-        text-align: left;
-        max-width: 50%;
-        display: inline-block;
-        text-align: left;
     }
+
+        &__grid-card{
+            padding: 2.5rem 5rem;
+            border-radius: 1rem;
+            border: 2px solid rgba(#626469,0.5);
+            display: block;
+            width: 33%;
+            &--heading{
+                padding: 1rem 2rem;
+                font-size: 5rem;
+                text-align: center;
+            
+            }
+            &--desc{
+                padding: 1rem 2rem;
+                text-align: left;
+            }
+        }
+    
+    // &__content-box{
+    //     z-index: 2;
+    //     position: relative;
+    //     max-width: max-content;
+    //     text-align: left;
+    //     max-width: 50%;
+    //     display: inline-block;
+    //     text-align: left;
+    // }
+
    
     &__pfp{
         width: 20rem;
