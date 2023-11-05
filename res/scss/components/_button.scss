@@ -1,17 +1,17 @@
+.btn {
 
-
-.btn{
     &:link,
-    &:visited{
+    &:visited {
         text-decoration: none;
     }
 
-    &--anim{
+    &--anim {
         animation: entryfromBotAnim 1s cubic-bezier(0.65, 0, 0.35, 1)forwards;
     }
 
 }
-.btn-header{
+
+.btn-header {
     font-weight: 500;
     display: inline-block;
     text-align: center;
@@ -19,12 +19,12 @@
     background-color: $main-white;
     color: $main-gray;
     padding: 0.5rem 2rem;
-    transition: background-color ease-in-out .3s, color ease-in-out .3s ;
-    box-shadow: 0rem 0rem 2rem rgba($main-gray,0.5);    
+    transition: background-color ease-in-out .3s, color ease-in-out .3s;
+    box-shadow: 0rem 0rem 2rem rgba($main-gray, 0.5);
     border: 2px solid $main-white;
     position: relative;
 
-    &::after{
+    &::after {
         position: absolute;
         content: '';
         top: -1rem;
@@ -34,10 +34,22 @@
     }
 
     &:hover,
-    &:active{
+    &:active {
         background-color: transparent;
         border: 2px solid $main-white;
         color: $main-white;
 
     }
+}
+
+.btn__blue {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.25rem 2rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: $col-cyan-dark;
+    color: $col-white-lig;
+    box-shadow: 0 4px 10px rgba($color-gray-1, 0.2);
+
 }

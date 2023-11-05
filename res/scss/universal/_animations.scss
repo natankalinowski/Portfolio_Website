@@ -1,57 +1,68 @@
 @keyframes shake {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    25%{
+
+    25% {
         transform: rotate(9deg);
     }
-    50%{
+
+    50% {
         transform: rotate(-9deg);
     }
-    75%{
+
+    75% {
         transform: rotate(0deg), scale(1.1);
     }
-    100%{
+
+    100% {
         transform: rotate(0deg), scale(1);
     }
 }
 
 @keyframes entryLeftAnim {
-    0%{
+    0% {
         transform: translate(-10rem);
         opacity: 0;
     }
-    80%{
+
+    80% {
         opacity: 0.7;
     }
-    100%{
+
+    100% {
         transform: translate(0);
         opacity: 1;
     }
 }
+
 @keyframes entryRightAnim {
-    0%{
+    0% {
         transform: translate(10rem);
         opacity: 0;
     }
-    80%{
+
+    80% {
         opacity: 0.7;
     }
-    100%{
+
+    100% {
         transform: translate(0);
         opacity: 1;
     }
 }
 
 @keyframes entryfromBotAnim {
-    0%{
+    0% {
         transform: translateY(10rem);
         opacity: 0;
     }
-    80%{
+
+    80% {
         opacity: 0.7;
     }
-    100%{
+
+    100% {
         transform: translateY(0);
         opacity: 1;
     }

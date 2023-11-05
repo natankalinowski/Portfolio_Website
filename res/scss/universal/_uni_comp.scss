@@ -1,26 +1,54 @@
-.uni-marg-bot-huge{margin-bottom: 8rem;}
-.uni-marg-bot-big{margin-bottom: 6rem;}
-.uni-marg-bot-mid{margin-bottom: 4rem;}
-.uni-marg-bot-small{margin-bottom: 2rem;}
-.uni-marg-bot-ultra-small{margin-bottom: 1rem;}
+.uni-marg-bot-huge {
+    margin-bottom: 8rem;
+}
 
-.uni-marg-top-huge{margin-top: 8rem;}
-.uni-marg-top-big{margin-top: 6rem;}
-.uni-marg-top-mid{margin-top: 4rem;}
-.uni-marg-top-small{margin-top: 2rem;}
-.uni-marg-top-ultra-small{margin-top: 1rem;}
+.uni-marg-bot-big {
+    margin-bottom: 6rem;
+}
+
+.uni-marg-bot-mid {
+    margin-bottom: 4rem;
+}
+
+.uni-marg-bot-small {
+    margin-bottom: 2rem;
+}
+
+.uni-marg-bot-ultra-small {
+    margin-bottom: 1rem;
+}
+
+.uni-marg-top-huge {
+    margin-top: 8rem;
+}
+
+.uni-marg-top-big {
+    margin-top: 6rem;
+}
+
+.uni-marg-top-mid {
+    margin-top: 4rem;
+}
+
+.uni-marg-top-small {
+    margin-top: 2rem;
+}
+
+.uni-marg-top-ultra-small {
+    margin-top: 1rem;
+}
 
 
-.content-box{
+.content-box {
     position: relative;
     display: inline-block;
     width: 100%;
     text-align: center;
 }
-.uni-bot-gap-sm{
 
-    &:not(:last-child){
+.uni-bot-gap-sm {
+
+    &:not(:last-child) {
         margin-bottom: 2rem;
     }
 }
-
