@@ -1,88 +1,144 @@
-.text-box {
-    &__h1 {
-        font-size: 6rem;
-        color: $main-white;
+.web-text{
+    color: $col-black-dark;
+    &__h1{
+        font-size: 5rem;
         padding: 0;
-
+        color: $col-black-dark;
     }
-
-    &__h2 {
+    &__h2{
         font-size: 4rem;
-        color: $main-white;
         padding: 0;
-
+        color: $col-black-mid;
+    }
+    &__h3{
+        font-size: 3rem;
+        padding: 0;
     }
     &__h4{
         font-size: 1.7rem;
-        color: $main-white;
+        padding: 0;
+    }
+    &__p{
         padding: 0;
     }
 
-    &__h3 {
-        text-align: center;
-        font-size: 2.5rem;
-        color: $main-white;
-        line-height: 2rem;
-
-        &--dev {
-            color: $main-red;
+    &__prot{
+        &--100{
+            font-weight: 100;
         }
+        &--200{
+            font-weight: 200;
+        }
+        &--300{
+            font-weight: 300;
 
-        &--light {
-            color: $main-white;
+        }
+        &--500{
             font-weight: 500;
-            font-size: 2rem;
-            color: #868e96;
         }
-
-    }
-
-    &__span {
-        &--red {
-            color: $main-red;
-        }
-
-        &--blue {
-            color: $main-blue;
-        }
-
-        &--yellow {
-            color: $main-yellow;
+        &--700{
+            font-weight: 700;
         }
     }
 
-    &--anim-fr-left {
-        animation: entryLeftAnim .8s cubic-bezier(0.65, 0, 0.35, 1)forwards;
+    &__col{
 
+     &--blue{
+        color: $col-cyan-dark;
+     }   
     }
 
-    &--anim-fr-right {
-        animation: entryRightAnim .8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-    }
 }
 
-.special {
-    &--html {
-        color: $main-green;
-        background: $color-gray-1;
-        padding: 0.5rem 1rem;
-    }
 
-    &--css {
-        color: $main-red;
-        background: $color-gray-1;
-        padding: 0.5rem 1rem;
-    }
+// .text-box {
+    
+//     &__h1 {
+//         font-size: 6rem;
+//         color: $main-white;
+//         padding: 0;
 
-    &--js {
-        color: $main-yellow;
-        background: $color-gray-1;
-        padding: 0.5rem1rem;
-    }
+//     }
 
-    &--react {
-        color: $main-blue;
-        background: $color-gray-1;
-        padding: 0.5rem 1rem;
-    }
-}
+//     &__h2 {
+//         font-size: 4rem;
+//         color: $main-white;
+//         padding: 0;
+
+//     }
+//     &__h4{
+//         font-size: 1.7rem;
+//         color: $main-white;
+//         padding: 0;
+//     }
+
+//     &__h3 {
+//         text-align: center;
+//         font-size: 2.5rem;
+//         color: $main-white;
+//         line-height: 2rem;
+
+//         &--dev {
+//             color: $main-red;
+//         }
+
+//         &--light {
+//             color: $main-white;
+//             font-weight: 500;
+//             font-size: 2rem;
+//             color: #868e96;
+//         }
+
+//     }
+
+//     &__span {
+//         &--red {
+//             color: $main-red;
+//         }
+
+//         &--blue {
+//             color: $main-blue;
+//         }
+
+//         &--yellow {
+//             color: $main-yellow;
+//         }
+//     }
+
+//     &--anim-fr-left {
+//         animation: entryLeftAnim .8s cubic-bezier(0.65, 0, 0.35, 1)forwards;
+
+//     }
+
+//     &--anim-fr-right {
+//         animation: entryRightAnim .8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+//     }
+// }
+
+
+
+// .special {
+//     &--html {
+//         color: $main-green;
+//         background: $color-gray-1;
+//         padding: 0.5rem 1rem;
+//     }
+
+//     &--css {
+//         color: $main-red;
+//         background: $color-gray-1;
+//         padding: 0.5rem 1rem;
+//     }
+
+//     &--js {
+//         color: $main-yellow;
+//         background: $color-gray-1;
+//         padding: 0.5rem1rem;
+//     }
+
+//     &--react {
+//         color: $main-blue;
+//         background: $color-gray-1;
+//         padding: 0.5rem 1rem;
+//     }
+// }
