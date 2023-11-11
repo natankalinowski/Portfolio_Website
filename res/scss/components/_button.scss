@@ -9,6 +9,21 @@
         animation: entryfromBotAnim 1s cubic-bezier(0.65, 0, 0.35, 1)forwards;
     }
 
+    &__see{
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 1.25rem 2rem;
+        border: 0;
+        border-radius: 5px;
+        background-color: $col-cyan-dark;
+        color: $col-white-lig;
+        box-shadow: 0 4px 10px rgba($color-gray-1, 0.2);    
+        transition: transform 0.5s $trn-easeoutQuint;
+        
+        &:hover{
+            transform: scale(1.1);            
+        }
+    }
 }
 
 .btn-header {
@@ -50,6 +65,12 @@
     border-radius: 5px;
     background-color: $col-cyan-dark;
     color: $col-white-lig;
-    box-shadow: 0 4px 10px rgba($color-gray-1, 0.2);
+    box-shadow: 0 4px 10px rgba($color-gray-1, 0.2);    
+    transition: transform 0.6s $trn-easeoutQuint;
+
+    &:hover{
+        transform: rotate(3deg) scale(1.1);
+    }
+
 
 }
